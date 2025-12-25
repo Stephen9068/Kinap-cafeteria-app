@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<head>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0a5cff">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KINAP Cafeteria</title>
+
+  <!-- App Name -->
+  <meta name="application-name" content="KINAP Cafeteria">
+
+</head>
+<script src="app.js"></script>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+</script>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>KINAP Cafeteria</h1>
+
+    <!-- Cart Icon -->
+<div id="cart-icon" onclick="openCart()">
+  🛒
+  <sup id="cart-count">0</sup>
+</div>
+    
+  </header>
+
+  <!-- INFO BAR -->
+  <section id="status-bar">
+    <p>🟢 Open for Orders</p>
+  </section>
+
+  <!-- MENU SECTION -->
+  <main id="menu">
+
+    <!-- Food Item -->
+<div class="food-card">
+  <h3>Rice & Beans</h3>
+  <p>KES 70</p>
+  <p class="available">Available</p>
+  <button class="add-to-cart" data-name="Rice & Beans" data-price="70">
+    Add to Cart
+  </button>
+</div>
+
+    <div class="food-card">
+  <h3>Chapati & Ndengu</h3>
+  <p>KES 70</p>
+  <p class="available">Available</p>
+  <button class="add-to-cart" data-name="Chapati & Ndengu" data-price="70">
+    Add to Cart
+  </button>
+</div>
+      
+
+    <div class="food-card">
+  <h3>Chips</h3>
+  <p>KES 100</p>
+  <p class="sold-out">Sold Out</p>
+  <button disabled>Sold Out</button>
+</div>
+
+  </main>
+<script src="app.js"></script>
+<script>
+  if ("serviceWorker" in navigator) {
+    navigator.serviceWorker.register("service-worker.js");
+  }
+</script>
+
+</body>
+</html>
