@@ -1,10 +1,12 @@
-const CACHE_NAME = "kinap-cafeteria-v1";
+const CACHE_NAME = "kinap-cafeteria-v2";
 const FILES_TO_CACHE = [
   "index.html",
   "cart.html",
   "style.css",
   "app.js",
   "manifest.json"
+  "icons/icon-176png"
+  "icons/icon-367.png"
 ];
 
 self.addEventListener("install", event => {
